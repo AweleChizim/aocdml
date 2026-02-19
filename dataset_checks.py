@@ -3,22 +3,7 @@ from PIL import Image
 from collections import Counter
 
 
-file_path = r"datasets/OTU_2d/train_cls.txt"
-# image_dir = r"datasets/uterine_fibroid_ultrasound_images/UF"
-image_dir = r"datasets/OTU_2d/images"
-
-# MMOTU Class Labelling
-label_counts = Counter()
-
-with open(file_path, "r") as f:
-    for line in f:
-        parts = line.strip().split()  # splits on whitespace
-        if len(parts) == 2:
-            _, label = parts
-            label_counts[int(label)] += 1
-
-for i in range(8):
-    print(f"Label {i}: {label_counts[i]} images")
+image_dir = r"datasets/NO"
 
 
 # Dataset Corrupted File Check
