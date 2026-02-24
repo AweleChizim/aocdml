@@ -28,7 +28,7 @@ def crop_and_overwrite(image_path):
 
 
 
-dataset_folder = "cross_val_folds/fold_1/test/UF"
+dataset_folder = "datasets/UF"
 image_paths = glob.glob(os.path.join(dataset_folder, "**", "*.jpg"), recursive=True)
 
 processed_count = 0
