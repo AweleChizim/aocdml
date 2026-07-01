@@ -17,7 +17,7 @@ def convert_rgb_to_grayscale(path):
 
 def resize_images(path):
     img = Image.open(path)
-    img_resized = img.resize((224, 224), Image.BILINEAR)
+    img_resized = img.resize((224, 224), Image.BILINEAR) # type: ignore
     img_resized.save(path) 
 
 def normalize_and_filter_images(path):
